@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make A Request</title>
+        <!-- <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0"> -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="services.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="https://formspree.io/f/mnqydkyk" method="POST">
+        <h1>Make A Request</h1>
+        
+        <fieldset>
+          
+          <legend>The Waste:</legend>
+        
+          <label for="wasteType">Please Choose Type of Waste</label>
+          <select id="wasteType" name="type_waste">
+<!--             <optgroup label="Web"> -->
+             <option value="dry">Dry</option>
+            <option value="e-waste">e-waste</option>
+            <option value="hazardous">Hazardous</option>
+             <option value="plastic">Plastic</option>
+            <option value="sanitary">Sanitary</option> 
+           <option value="wet">Wet</option>
+          </select>
+          <label for="wastePicture"> OR Upload a Picture Of Waste</label>
+          <input type="file" id="wastePicture" name="waste-picture">
+          <label for="wasteAmount">Amount Of Waste(in KG)</label>
+  <input id="wasteAmount" type="number" name="amount-of-waste" step=".01">
+          <label for="dateOfPickUp">Please Choose Date Of PickUp:</label>
+<input type="date" id="dateOfPickUp" name="pickup-date">
+          <label for="pickupTime">Time Of PickUp:</label>
+      <input type="time" id="pickupTime">
+      <label for="findMe">Please Select Location:</label>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.73907005717!2d76.81307299667618!3d28.646677259922765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1664296562237!5m2!1sen!2sin" width="430" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <label for="specialRequest">Anything you'd like our Garbage Collector to know</label>
+
+<textarea id="specialRequest" name="special-request" rows="4" cols="50">
+</textarea>
+         </fieldset>
+       
+        <button type="submit">Request</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
